@@ -1,0 +1,82 @@
+.container {
+  min-height: 100vh;
+  background: linear-gradient(to bottom right, #111827, #000000, #111827);
+  color: white;
+}
+
+/* Center wrapper */
+.centerWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  padding: 0 16px;
+}
+
+/* Card box */
+.card {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+  border: 1px solid #374151;
+  border-radius: 16px;
+  padding: 40px;
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+}
+
+/* Heading */
+.heading {
+  font-size: 28px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.highlight {
+  color: #6366f1;
+}
+
+/* Subtext */
+.subtext {
+  margin-top: 10px;
+  color: #d1d5db;
+  font-size: 14px;
+}
+
+/* Buttons */
+.buttonContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.primaryBtn {
+  padding: 12px;
+  background-color: #6366f1;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  color: white;
+  transition: 0.3s;
+}
+
+.primaryBtn:hover {
+  background-color: #4f46e5;
+  transform: scale(1.05);
+}
+
+.secondaryBtn {
+  padding: 12px;
+  border: 1px solid #6b7280;
+  border-radius: 8px;
+  text-decoration: none;
+  color: white;
+  transition: 0.3s;
+}
+
+.secondaryBtn:hover {
+  background-color: #1f2937;
+  transform: scale(1.05);
+}

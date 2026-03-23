@@ -1,0 +1,74 @@
+.container {
+  margin-top: 10px;
+}
+
+.videoGrid {
+  display: flex;
+  gap: 10px;
+}
+
+.videoBox {
+  position: relative;
+  width: 200px;
+  height: 150px;
+  background: black;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.videoBox video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.videoBox span {
+  position: absolute;
+  bottom: 5px;
+  left: 5px;
+  color: white;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 2px 6px;
+  font-size: 12px;
+  border-radius: 5px;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between; /* 🔥 THIS PUSHES LEAVE RIGHT */
+  align-items: center;
+  margin-top: 10px;
+  width: 100%;
+}
+
+/* LEFT SIDE BUTTONS */
+.leftControls {
+  display: flex;
+  gap: 10px;
+}
+
+.controls button {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  background: #1f2937;
+  color: white;
+}
+
+.leave {
+  background: #ef4444; /* bright red */
+  color: white;
+  width: 90px;        /* bigger than others */
+  height: 50px;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 10px;
+}
+
+/* hover effect */
+.leave:hover {
+  background: #dc2626;
+}

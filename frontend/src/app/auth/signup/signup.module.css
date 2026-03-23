@@ -1,0 +1,150 @@
+/* Full page background */
+.container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0f172a, #020617);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Glass card */
+.card {
+  width: 100%;
+  max-width: 420px;
+  background: rgba(255, 255, 255, 0.07);
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 40px 30px;
+  text-align: center;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6);
+  color: white;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* Heading */
+.heading {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.highlight {
+  color: #6366f1;
+}
+
+/* Subtext */
+.subtext {
+  font-size: 14px;
+  color: #cbd5f5;
+  margin-bottom: 25px;
+}
+
+/* Input field */
+.input {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: 1px solid #374151;
+  background: rgba(255, 255, 255, 0.05);
+  color: white;
+  margin-bottom: 15px;
+  outline: none;
+  transition: all 0.25s ease;
+}
+
+.input::placeholder {
+  color: #9ca3af;
+}
+
+.input:focus {
+  border-color: #6366f1;
+  box-shadow: 0 0 10px rgba(99, 102, 241, 0.6);
+}
+
+/* Button */
+.button {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(to right, #6366f1, #4f46e5);
+  border-radius: 10px;
+  font-weight: 600;
+  border: none;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.button:hover {
+  transform: scale(1.04);
+  box-shadow: 0 0 15px rgba(99, 102, 241, 0.7);
+}
+
+/* Forgot password */
+.forgot {
+  text-align: right;
+  font-size: 13px;
+  color: #9ca3af;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+.forgot:hover {
+  color: #ffffff;
+}
+
+/* Footer */
+.footer {
+  margin-top: 18px;
+  font-size: 13px;
+  color: #9ca3af;
+}
+
+.link {
+  color: #6366f1;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+/* 🔥 Popup */
+.popup {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background: rgba(15, 23, 42, 0.95);
+  color: white;
+  padding: 14px 20px;
+  border-radius: 10px;
+  border: 1px solid #6366f1;
+  box-shadow: 0 0 20px rgba(99, 102, 241, 0.6);
+  font-size: 14px;
+  animation: slideIn 0.4s ease;
+  z-index: 1000;
+}
+
+/* animation */
+@keyframes slideIn {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Disabled button */
+.button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
